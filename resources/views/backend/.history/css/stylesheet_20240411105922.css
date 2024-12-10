@@ -1,0 +1,480 @@
+            @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+            * {
+                box-sizing: border-box;
+                font-family: 'Roboto', sans-serif;
+            }
+            
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            
+            ul {
+                margin: 0;
+                padding: 0;
+            }
+            
+            ul li {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+                font-family: 'Roboto', sans-serif;
+            }
+            
+            a {
+                margin: 0;
+                padding: 0;
+                text-decoration: none;
+            }
+            
+            img {
+                width: 100%;
+            }
+            
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                margin: 0;
+                padding: 0;
+                font-family: 'Roboto', sans-serif;
+                line-height: 1.2;
+            }
+            
+            p {
+                font-family: 'Roboto', sans-serif;
+                font-size: 18px;
+                line-height: 1.5;
+            }
+            
+            header {
+                padding: 10px 20px;
+                background-color: #fff;
+                position: fixed;
+                left: 0;
+                right: 0;
+                z-index: 999;
+            }
+            
+            header img {
+                width: 180px;
+            }
+            
+            header .header-item {
+                display: flex;
+                margin-left: -15px;
+                margin-right: -15px;
+                align-items: center;
+            }
+            
+            header .header-item .colleft {
+                width: 50%;
+                padding-left: 15px;
+                padding-right: 15px
+            }
+            
+            header .header-item .colright {
+                width: 50%;
+                padding-left: 15px;
+                padding-right: 15px;
+                text-align: end;
+            }
+            
+            header .header-item .colright h3 {
+                color: #455656;
+                font-size: 22px;
+                font-weight: 500;
+            }
+            
+    
+            .dashboard-left {
+                width: 300px;
+                min-height: 100vh;
+                background-color: #455656;
+                position: fixed;
+                top: 45px;
+            }
+            
+            .dashboard-left ul {
+                padding: 50px 0px 30px 0px;
+            }
+            
+            .dashboard-left ul li {
+                padding: 15px 20px 15px 40px;
+                text-align: left;
+                border-radius: 0px 30px 30px 0px;
+                transition: 0.5s;
+                cursor:pointer ;
+              }
+            .dashboard-left ul a {
+                color: #fff;
+                font-size: 18px;
+            }
+            .dashboard-left ul li:hover{
+                background-color: #e1eceb;
+
+            }
+            .dashboard-left ul li:hover a{
+                color: #455656;
+            }
+            .dashboard-left ul .active {
+                background-color: #e1eceb;
+            }
+ 
+            .dashboard-left ul .active a {
+                color: #455656;
+              }
+            
+
+            
+            .dashboard-right {
+                padding: 115px 0px 40px 330px;
+                width: auto;
+                min-height: 100vh;
+                margin-left: 20px;
+                margin-right: 20px;
+                background: #e1eceb;
+            }
+            
+            .dashboard-right .dashboard-title {
+                margin-bottom: 70px;
+            }
+            
+            .dashboard-right .dashboard-title h2 {
+                color: #455656;
+                font-size: 25px;
+                font-weight: 500;
+            }
+            
+            .dashboard-right .ads-wrap {
+                display: flex;
+                margin-left: -15px;
+                margin-right: -15px;
+            }
+            
+            .dashboard-right .ads-wrap .add-box {
+                width: 25%;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            
+            .dashboard-right .add-info {
+                background-color: #f1e2b3;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 40px;
+                border-radius: 10px;
+                height: 150px;
+                margin-bottom: 30px;
+            }
+            
+            .dashboard-right .ads-wrap .add-box h4 {
+                font-size: 19px;
+      
+                font-weight: 500;
+                color: #455656;
+                margin-right: 10px;
+            }
+            
+            .dashboard-right .ads-wrap .add-box span {
+                color: #455656;
+                font-size: 21px;
+                background-color: #fff;
+                width: 40px;
+                height: 40px;
+                text-align: center;
+                border-radius: 100px;
+                line-height: 40px;
+            }
+            
+            .dashboard-right .add-info.info2 span {
+                background-color: #455656;
+                color: #fff;
+            }
+            
+            .dashboard-right .ads-table {
+                padding-right: 15px;
+            }
+            
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                box-shadow: rgba(1, 1, 1, .09) 0px 0px 11px 0;
+                margin-bottom: 30px;
+                overflow-x: auto;
+                background: #fff;
+            }
+            
+            th {
+                background: #f1e2b3 !important;
+                color: #455656;
+                font-size: 18px;
+            }
+            
+            td,
+            th {
+                padding: 13px;
+                border-bottom: 1px solid #ddd;
+                text-align: center;
+                font-size: 17px;
+                font-weight: 400;
+                line-height: 1.5;
+                vertical-align: middle;
+            }
+            
+            table .btn {
+                transition: all .7s;
+                border: none;
+                background-color: #455656;
+                font-size: 16px;
+                text-align: center;
+                padding: 10px;
+                cursor: pointer;
+                border-radius: 10px;
+                color: #455656;
+            }
+            
+            table .btn.btn-submit {
+                background-color: #455656;
+                color: #fff;
+                margin-left: 3px;
+            }
+            
+            .dashboard-right .ads-form {
+                padding-right: 15px;
+            }
+            
+            form {
+                background-color: #fff;
+                box-shadow: rgba(1, 1, 1, .09) 0px 0px 11px 0;
+                padding: 40px;
+                position: relative;
+                border-radius: 10px;
+            }
+            
+            label {
+                display: block;
+                margin-bottom: 5px;
+                color: #111111;
+            }
+            
+            form .input-grid {
+                display: flex;
+                gap: 10px;
+            }
+            
+            form .input-grid .form-input {
+                width: 50%;
+            }
+            
+            form input {
+                display: block;
+                width: 100%;
+                padding: 6px 12px;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 1.5;
+                color: #212529;
+                background-color: #f5f3f1;
+                border: 1px solid#ddd;
+                border-radius: 6px;
+                transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+                margin-bottom: 20px;
+                outline: none;
+            }
+            
+            form textarea {
+                display: block;
+                width: 100%;
+                padding: 6px 12px;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 1.5;
+                color: #212529;
+                background-color: #f5f3f1;
+                border: 1px solid#ddd;
+                border-radius: 6px;
+                transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+                margin-bottom: 20px;
+                outline: none;
+                height: 120px;
+            }
+            
+            form .btn-submit {
+                background-color: #455656;
+                padding: 15px 45px;
+                border-radius: 6px;
+                font-size: 18px;
+                border: 0;
+                color: #fff;
+                cursor: pointer;
+                transition: 0.6s;
+            }
+            
+            form .submit {
+                text-align: center;
+                margin-top: 30px;
+            }
+            
+            form .btn-submit:hover {
+                background-color: #f1e2b3;
+                color: #455656;
+            }
+            
+            .pagination {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .pagination ul {
+                display: flex;
+                align-items: center;
+            }
+            
+            .pagination ul li a {
+                width: 40px;
+                height: 40px;
+                background-color: #455656;
+                border-radius: 100px;
+                text-align: center;
+                line-height: 40px;
+                color: #fff;
+                color: #fff;
+                font-size: 18px;
+                transition: 0.5s;
+                display: block;
+                margin: 5px;
+            }
+            
+            .pagination ul li .active {
+            background-color: #f1e2b3;
+                color: #455656;
+            }
+            
+            .login {
+                padding-top: 300px;
+                min-height: 100vh;
+                background-image: url(../login.png);
+                background-position: center;
+                background-size: cover;
+                position: relative;
+            }
+            .login::before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #455656;
+                opacity: 0.5;
+            }
+            .login h2 {
+                font-size: 30px;
+                margin-bottom: 30px;
+                font-weight: 500;
+                color: #455656;
+                text-align: center;
+            }
+            
+       
+            .login form {
+                max-width: 650px;
+                margin-left: auto;
+                margin-right: 100px;
+            }
+            
+            .login form p a {
+                color: #19232d;
+                transition: 0.6S;
+            }
+            
+            .login form p a:hover {
+                color: #455656;
+            }
+            
+            .login form p {
+                color: #455656;
+                text-align: center;
+            }
+            
+            footer {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                background-color: #19232d;
+            }
+            
+            footer p {
+                color: #fff;
+                text-align: center;
+            }
+
+            
+            table tr .approved {
+                display: inline-block;
+                padding: 6px;
+                font-size: 14px;
+                line-height: 1;
+                text-align: center;
+                vertical-align: center;
+                border-radius: 3px;
+                background-color: #6ca12b;
+                color: #fff;
+            }
+            
+            table tr .pending {
+                background-color: #ffc107;
+                color: #000;
+                display: inline-block;
+                padding: 6px;
+                font-size: 14px;
+                line-height: 1;
+                text-align: center;
+                vertical-align: baseline;
+                border-radius: 3px;
+            }
+            
+            table tr .reject {
+                background-color: #f706008f;
+                color: #fff;
+                display: inline-block;
+                padding: 6px;
+                font-size: 14px;
+                line-height: 1;
+                text-align: center;
+                vertical-align: baseline;
+                border-radius: 3px;
+            }
+            
+            .flight-dashboard.company-dashboard table .btn {
+                background-color: #0c2f55;
+                color: #fff;
+            }
+            
+            .flight-dashboard.company-dashboard table .btn.btn-submit {
+                background-color: #a12b2b;
+                color: #fff;
+            }
+            
+            .flight-dashboard.company-dashboard table .btn.btn-view {
+                background-color: #455656;
+                color: #fff;
+                margin-left: 5px;
+            }
+            
+            .flight-dashboard.company-dashboard .ads-form form .btn-submit {
+                background-color: #455656;
+            }
+            
+            .flight-dashboard.company-dashboard th {
+                background: #455656 !important;
+            }
+            
+            .flight-dashboard.company-dashboard .pagination ul li .active {
+                background-color: #0c2f55;
+                color: #fff;
+            }
